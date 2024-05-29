@@ -20,7 +20,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AppRoutingModule,
     HttpClientModule,
     BaseChartDirective,
-    DashboardModule,
+    DashboardModule
   ],
   providers: [provideCharts(withDefaultRegisterables())],
   bootstrap: [AppComponent]
