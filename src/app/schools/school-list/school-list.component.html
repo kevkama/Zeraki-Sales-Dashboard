@@ -1,0 +1,9 @@
+<div>
+    <h2>List of Schools</h2>
+    <ul>
+      <li *ngFor="let school of schools" (click)="viewDetails(school.id)">
+        {{ school.name }}
+      </li>
+    </ul>
+  </div>
+  

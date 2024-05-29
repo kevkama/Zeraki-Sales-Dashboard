@@ -1,0 +1,31 @@
+<div *ngIf="invoices.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Invoice Number</th>
+          <th>Item</th>
+          <th>Creation Date</th>
+          <th>Due Date</th>
+          <th>Amount</th>
+          <th>Paid Amount</th>
+          <th>Balance</th>
+          <th>Status</th>
+          <th>Days Until Due</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let invoice of invoices">
+          <td>{{ invoice.number }}</td>
+          <td>{{ invoice.item }}</td>
+          <td>{{ invoice.creationDate }}</td>
+          <td>{{ invoice.dueDate }}</td>
+          <td>{{ invoice.amount }}</td>
+          <td>{{ invoice.paidAmount }}</td>
+          <td>{{ invoice.balance }}</td>
+          <td>{{ invoice.status }}</td>
+          <td>{{ invoice.daysUntilDue }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

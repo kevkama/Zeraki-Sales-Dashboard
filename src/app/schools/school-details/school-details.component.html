@@ -1,0 +1,16 @@
+<div *ngIf="school">
+    <h2>{{ school.name }} Details</h2>
+    <p>Type: {{ school.type }}</p>
+    <p>Product: {{ school.product }}</p>
+    <p>County: {{ school.county }}</p>
+    <p>Registration Date: {{ school.registrationDate }}</p>
+    <p>Contact Info: {{ school.contactInfo }}</p>
+    <p>Balance: {{ school.balance }}</p>
+  
+    <h3>Invoices</h3>
+    <app-invoices [invoices]="invoices"></app-invoices>
+  
+    <h3>Collections</h3>
+    <app-collections [collections]="collections"></app-collections>
+  </div>
+  

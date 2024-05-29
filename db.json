@@ -1,0 +1,203 @@
+{
+  "collection": "120",
+  "signups": {
+    "total": 300,
+    "byProduct": {
+      "analytics": 100,
+      "finance": 120,
+      "timetable": 80
+    },
+    "bySchoolType": {
+      "primary": 150,
+      "secondary": 100,
+      "igcse": 50
+    }
+  },
+  "totalRevenue": {
+    "total": 50000,
+    "byProduct": {
+      "analytics": 20000,
+      "finance": 15000,
+      "timetable": 15000
+    }
+  },
+  "bouncedCheques": "5",
+  "upcomingInvoices": [
+    {
+      "schoolName": "ABC Primary School",
+      "amountDue": 1000,
+      "dueDate": "2023-06-01"
+    },
+    {
+      "schoolName": "XYZ Secondary School",
+      "amountDue": 2000,
+      "dueDate": "2023-06-05"
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "Primary School A",
+      "type": "Primary",
+      "product": "Zeraki Analytics",
+      "county": "County A",
+      "registrationDate": "2022-01-01",
+      "contactInfo": "info@primarya.edu",
+      "balance": 5000
+    },
+    {
+      "id": 2,
+      "name": "Secondary School B",
+      "type": "Secondary",
+      "product": "Zeraki Finance",
+      "county": "County B",
+      "registrationDate": "2021-09-15",
+      "contactInfo": "info@secondaryb.edu",
+      "balance": 3000
+    },
+    {
+      "id": 3,
+      "name": "IGCSE School C",
+      "type": "IGCSE",
+      "product": "Zeraki Timetable",
+      "county": "County C",
+      "registrationDate": "2023-02-20",
+      "contactInfo": "info@igcsec.edu",
+      "balance": 7000
+    },
+    {
+      "id": 4,
+      "name": "Primary School D",
+      "type": "Primary",
+      "product": "Zeraki Finance",
+      "county": "County D",
+      "registrationDate": "2022-04-10",
+      "contactInfo": "info@primaryd.edu",
+      "balance": 4000
+    },
+    {
+      "id": 5,
+      "name": "Secondary School E",
+      "type": "Secondary",
+      "product": "Zeraki Timetable",
+      "county": "County E",
+      "registrationDate": "2021-11-25",
+      "contactInfo": "info@secondarye.edu",
+      "balance": 6000
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "schoolId": 1,
+      "number": "INV001",
+      "item": "Zeraki Analytics",
+      "creationDate": "2023-01-01",
+      "dueDate": "2023-01-10",
+      "amount": 1000,
+      "paidAmount": 500,
+      "balance": 500,
+      "status": "Pending",
+      "daysUntilDue": 5
+    },
+    {
+      "id": 2,
+      "schoolId": 1,
+      "number": "INV002",
+      "item": "Zeraki Analytics",
+      "creationDate": "2023-02-01",
+      "dueDate": "2023-02-10",
+      "amount": 1500,
+      "paidAmount": 1500,
+      "balance": 0,
+      "status": "Completed",
+      "daysUntilDue": 0
+    },
+    {
+      "id": 3,
+      "schoolId": 2,
+      "number": "INV003",
+      "item": "Zeraki Finance",
+      "creationDate": "2023-03-01",
+      "dueDate": "2023-03-10",
+      "amount": 2000,
+      "paidAmount": 2000,
+      "balance": 0,
+      "status": "Completed",
+      "daysUntilDue": 0
+    },
+    {
+      "id": 4,
+      "schoolId": 3,
+      "number": "INV004",
+      "item": "Zeraki Timetable",
+      "creationDate": "2023-03-15",
+      "dueDate": "2023-03-25",
+      "amount": 1500,
+      "paidAmount": 1000,
+      "balance": 500,
+      "status": "Pending",
+      "daysUntilDue": 2
+    },
+    {
+      "id": 5,
+      "schoolId": 4,
+      "number": "INV005",
+      "item": "Zeraki Finance",
+      "creationDate": "2023-04-01",
+      "dueDate": "2023-04-10",
+      "amount": 2000,
+      "paidAmount": 500,
+      "balance": 1500,
+      "status": "Pending",
+      "daysUntilDue": 3
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "schoolId": 1,
+      "invoiceNumber": "INV001",
+      "number": "COL001",
+      "date": "2023-01-05",
+      "status": "Valid",
+      "amount": 500
+    },
+    {
+      "id": 2,
+      "schoolId": 1,
+      "invoiceNumber": "INV002",
+      "number": "COL002",
+      "date": "2023-02-05",
+      "status": "Valid",
+      "amount": 1500
+    },
+    {
+      "id": 3,
+      "schoolId": 2,
+      "invoiceNumber": "INV003",
+      "number": "COL003",
+      "date": "2023-03-05",
+      "status": "Valid",
+      "amount": 2000
+    },
+    {
+      "id": 4,
+      "schoolId": 3,
+      "invoiceNumber": "INV004",
+      "number": "COL004",
+      "date": "2023-03-20",
+      "status": "Valid",
+      "amount": 1000
+    },
+    {
+      "id": 5,
+      "schoolId": 4,
+      "invoiceNumber": "INV005",
+      "number": "COL005",
+      "date": "2023-04-05",
+      "status": "Valid",
+      "amount": 500
+    }
+  ]
+}

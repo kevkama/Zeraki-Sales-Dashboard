@@ -1,0 +1,14 @@
+<div class="upcoming-invoices">
+    <h3>Upcoming Invoices</h3>
+    <ul>
+      <li *ngFor="let invoice of upcomingInvoices">
+        <div>
+          <strong>{{ invoice.schoolName }}</strong>
+          <p>Amount Due: {{ invoice.amountDue | currency }}</p>
+          <p>Due Date: {{ invoice.dueDate }}</p>
+          <button (click)="collectPayment()">Collect Payment</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

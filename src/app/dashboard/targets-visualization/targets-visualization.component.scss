@@ -1,0 +1,13 @@
+.charts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .chart {
+      width: 80%;
+      text-align: center;
+      h3 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  

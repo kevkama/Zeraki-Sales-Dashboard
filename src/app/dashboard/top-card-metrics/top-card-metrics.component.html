@@ -1,0 +1,25 @@
+<div class="card-metrics">
+    <div class="card">
+      <h3>Collections</h3>
+      <p>{{ collection }}</p>
+    </div>
+    <div class="card">
+      <h3>Sign-ups</h3>
+      <p>Total: {{ signups?.total }}</p>
+      <p>Zeraki Analytics: {{ signups?.byProduct?.analytics }}</p>
+      <p>Zeraki Finance: {{ signups?.byProduct?.finance }}</p>
+      <p>Zeraki Timetable: {{ signups?.byProduct?.timetable }}</p>
+    </div>
+    <div class="card">
+      <h3>Total Revenue</h3>
+      <p>Total: {{ totalRevenue?.total | currency }}</p>
+      <p>Zeraki Analytics: {{ totalRevenue?.byProduct?.analytics | currency }}</p>
+      <p>Zeraki Finance: {{ totalRevenue?.byProduct?.finance | currency }}</p>
+      <p>Zeraki Timetable: {{ totalRevenue?.byProduct?.timetable | currency }}</p>
+    </div>
+    <div class="card">
+      <h3>Bounced Cheques</h3>
+      <p>{{ bouncedCheques }}</p>
+    </div>
+  </div>
+  

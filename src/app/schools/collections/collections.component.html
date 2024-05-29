@@ -1,0 +1,23 @@
+<div *ngIf="collections.length > 0">
+    <table>
+      <thead>
+        <tr>
+          <th>Invoice Number</th>
+          <th>Collection Number</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let collection of collections">
+          <td>{{ collection.invoiceNumber }}</td>
+          <td>{{ collection.number }}</td>
+          <td>{{ collection.date }}</td>
+          <td>{{ collection.status }}</td>
+          <td>{{ collection.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
