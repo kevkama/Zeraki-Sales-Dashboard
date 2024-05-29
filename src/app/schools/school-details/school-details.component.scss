@@ -1,17 +1,55 @@
-.school-details {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 1rem 0;
+/* Basic styles for the container */
+.school-details-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
   
-    p {
-      margin: 0.5rem 0;
+  /* Styles for cards */
+  .card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2, .card h3 {
+    margin-top: 0;
+  }
+  
+  /* Styles for tables */
+  .school-details-table, .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .school-details-table td, .data-table th, .data-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .school-details-table td:first-child {
+    font-weight: bold;
+    background-color: #f9f9f9;
+  }
+  
+  .data-table th {
+    background-color: #f1f1f1;
+    text-align: left;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .school-details-container {
+      padding: 10px;
     }
   
-    h3 {
-      margin-top: 2rem;
-      color: #0056b3;
+    .card {
+      padding: 10px;
+    }
+  
+    .school-details-table td, .data-table th, .data-table td {
+      padding: 8px;
     }
   }
   

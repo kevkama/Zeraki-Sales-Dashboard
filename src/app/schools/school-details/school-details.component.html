@@ -1,16 +1,89 @@
-<div *ngIf="school">
-    <h2>{{ school.name }} Details</h2>
-    <p>Type: {{ school.type }}</p>
-    <p>Product: {{ school.product }}</p>
-    <p>County: {{ school.county }}</p>
-    <p>Registration Date: {{ school.registrationDate }}</p>
-    <p>Contact Info: {{ school.contactInfo }}</p>
-    <p>Balance: {{ school.balance }}</p>
+<div class="school-details-container">
+    <!-- School Details Section -->
+    <div class="card">
+      <h2>{{ school.name }} Details</h2>
+      <table class="school-details-table">
+        <tr>
+          <td>Type:</td>
+          <td>{{ school.type }}</td>
+        </tr>
+        <tr>
+          <td>Product:</td>
+          <td>{{ school.product }}</td>
+        </tr>
+        <tr>
+          <td>County:</td>
+          <td>{{ school.county }}</td>
+        </tr>
+        <tr>
+          <td>Registration Date:</td>
+          <td>{{ school.registrationDate }}</td>
+        </tr>
+        <tr>
+          <td>Contact Info:</td>
+          <td>{{ school.contactInfo }}</td>
+        </tr>
+        <tr>
+          <td>Balance:</td>
+          <td>{{ school.balance }}</td>
+        </tr>
+      </table>
+    </div>
   
-    <h3>Invoices</h3>
-    <app-invoices [invoices]="invoices"></app-invoices>
+    <!-- Invoices Section -->
+    <div class="card">
+      <h3>Invoices</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Item</th>
+            <th>Creation Date</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Paid Amount</th>
+            <th>Balance</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let invoice of invoices">
+            <td>{{ invoice.number }}</td>
+            <td>{{ invoice.item }}</td>
+            <td>{{ invoice.creationDate }}</td>
+            <td>{{ invoice.dueDate }}</td>
+            <td>{{ invoice.amount }}</td>
+            <td>{{ invoice.paidAmount }}</td>
+            <td>{{ invoice.balance }}</td>
+            <td>{{ invoice.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   
-    <h3>Collections</h3>
-    <app-collections [collections]="collections"></app-collections>
+    <!-- Collections Section -->
+    <div class="card">
+      <h3>Collections</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Invoice Number</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let collection of collections">
+            <td>{{ collection.number }}</td>
+            <td>{{ collection.invoiceNumber }}</td>
+            <td>{{ collection.date }}</td>
+            <td>{{ collection.status }}</td>
+            <td>{{ collection.amount }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   
