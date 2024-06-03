@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MockDataService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://zeraki-db-pf3v.onrender.com';
 
   constructor(private http: HttpClient) { }
 

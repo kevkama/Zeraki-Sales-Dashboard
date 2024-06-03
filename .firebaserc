@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "dashboard-b467e"
+  },
+  "targets": {
+    "dashboard-b467e": {
+      "hosting": {
+        "dashboard-b467e": [
+          "dist/zeraki-sales-dashboard/browser"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
