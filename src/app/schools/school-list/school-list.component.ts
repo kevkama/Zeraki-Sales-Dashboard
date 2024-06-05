@@ -13,12 +13,12 @@ export class SchoolListComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://localhost:3000/schools').subscribe(data => {
+    this.http.get<any[]>('https://zeraki-db-pf3v.onrender.com/api/schools').subscribe(data => {
       this.schools = data;
     });
   }
 
   viewDetails(id: number): void {
-    this.router.navigate(['/schools/details', id]);
+    this.router.navigate(['/api/schools/details', id]);
   }
 }

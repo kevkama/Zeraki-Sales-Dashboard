@@ -18,19 +18,19 @@ export class SchoolDetailsComponent implements OnInit {
     const schoolId = this.route.snapshot.paramMap.get('id') ?? '';
 
     // Get school details
-    this.http.get<any>(`http://localhost:3000/schools/${schoolId}`).subscribe(data => {
+    this.http.get<any>(`https://zeraki-db-pf3v.onrender.com/api/schools/${schoolId}`).subscribe(data => {
       this.school = data;
     });
 
     // Get invoices
     const invoicesParams = new HttpParams().set('schoolId', schoolId);
-    this.http.get<any[]>('http://localhost:3000/invoices', { params: invoicesParams }).subscribe(data => {
+    this.http.get<any[]>('https://zeraki-db-pf3v.onrender.com/api/invoices', { params: invoicesParams }).subscribe(data => {
       this.invoices = data;
     });
 
     // Get collections
     const collectionsParams = new HttpParams().set('schoolId', schoolId);
-    this.http.get<any[]>('http://localhost:3000/collections', { params: collectionsParams }).subscribe(data => {
+    this.http.get<any[]>('https://zeraki-db-pf3v.onrender.com/api/collections', { params: collectionsParams }).subscribe(data => {
       this.collections = data;
     });
   }
